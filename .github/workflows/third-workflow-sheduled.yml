@@ -1,0 +1,13 @@
+name: my-third-workflow-job
+on: 
+  schedule:
+    - cron: "*/1 * * * *"
+  
+jobs:
+  job1:
+    runs-on: macos-13
+    steps:
+      - name: running the new job
+        run: echo "hello good morning"
+      - name: running the job1-step2
+        run: echo "hello good evening"
