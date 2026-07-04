@@ -7,4 +7,4 @@ jobs:
       - name: running the new job1
         run: echo "hello good morning workflow2"
       - name: running the job1-step2
-        run: echo "hello good evening workflow2"
+        run: echo "hello good evening workflow2 "
