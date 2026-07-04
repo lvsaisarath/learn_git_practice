@@ -16,3 +16,11 @@ jobs:
         run: echo "hello good morning"
       - name: running the job1-step2
         run: echo "hello good evening"
+  job3:
+     runs-on: macos-latest
+     needs: [job1,job2]
+     steps:
+       - name: running the new job3-step1
+         run: echo "hello good morning"
+       - name: running the job3-step2
+         run: echo "hello good evening"
